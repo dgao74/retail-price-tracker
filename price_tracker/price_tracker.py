@@ -35,7 +35,7 @@ def send_mail(i_name):
     server.login(email, g_app_pass)
 
     subject = "Item price drop, from price_tracker.py"
-    body = "The price for the following item has dropped below $" + str(price_limit) + ":\n\n" + i_name + ".\n\n\nLink: " + url
+    body = f"The price for the following item has dropped below ${price_limit}:\n\n {i_name}\n\n\n\n\nLink: {url}"
 
     msg = f"Subject: {subject}\n\n{body}"
 
